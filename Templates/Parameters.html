@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <meta charset = 'UTF-8'>
+        <title>FWI Prediction</title>
+    </head>
+    <body>
+        <form action = "{{url_for('predict_data')}}", method = 'POST'>
+            <label>Age</label>
+            <input type = 'text', name = 'age', required = 'required' /><br>
+            <label>Gender(male/female)</label>
+            <input type = 'text', name = 'sex', required = 'required' /><br>
+            <label>BMI</label>
+            <input type = 'text', name = 'bmi', required = 'required' /><br>
+            <label>No. of Children</label>
+            <input type = 'text', name = 'children', required = 'required' /><br>
+            <label>Do you Smoke?(yes/no)</label>
+            <input type = 'text', name = 'smoker', required = 'required' /><br>
+            <label>Region(southwest/southeast/northwest/northeast)</label>
+            <input type = 'text', name = 'region', required = 'required' /><br>
+            
+            <button type = 'submit', class = "btn btn-primary btn-block btn-large">Predict Premium</button>
+        </form>
+        <h1>
+            Predicted Premium is {{result}}
+        </h1>
+    </body>
+</html>
