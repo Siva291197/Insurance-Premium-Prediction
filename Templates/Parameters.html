@@ -4,19 +4,19 @@
         <title>FWI Prediction</title>
     </head>
     <body>
-        <form action = "{{url_for('predict_data')}}", method = 'POST'>
+        <form action = "{{url_for('predict_data')}}" method = 'POST'>
             <label>Age</label>
-            <input type = 'text', name = 'age', required = 'required' /><br>
+            <input type = 'text' name = 'age' value = "{{age}}" required = 'required' /><br>
             <label>Gender(male/female)</label>
-            <input type = 'text', name = 'sex', required = 'required' /><br>
+            <input type = 'text' name = 'sex' value = "{{sex}}" required = 'required' /><br>
             <label>BMI</label>
-            <input type = 'text', name = 'bmi', required = 'required' /><br>
+            <input type = 'text' name = 'bmi' value = "{{bmi}}" required = 'required' /><br>
             <label>No. of Children</label>
-            <input type = 'text', name = 'children', required = 'required' /><br>
+            <input type = 'text' name = 'children' value = "{{children}}" required = 'required' /><br>
             <label>Do you Smoke?(yes/no)</label>
-            <input type = 'text', name = 'smoker', required = 'required' /><br>
+            <input type = 'text' name = 'smoker' value = "{{smoker}}" required = 'required' /><br>
             <label>Region(southwest/southeast/northwest/northeast)</label>
-            <input type = 'text', name = 'region', required = 'required' /><br>
+            <input type = 'text' name = 'region' value = "{{region}}" required = 'required' /><br>
             
             <button type = 'submit', class = "btn btn-primary btn-block btn-large">Predict Premium</button>
         </form>
